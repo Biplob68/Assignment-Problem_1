@@ -6,7 +6,7 @@
 ## Solution:
 ##### Here,  I have created 4 java class- main class, Product Class, ProductList class, and Small Shop class. I have divided my task into 3 classes mainly. 
 
-### Product Class: The product class contains different types of variables and methods of the product. It contains the product name, buying price, selling price, and total available products in the inventory. product class also contains some methods to access some attributes.  
+### Product Class: #### The product class contains different types of variables and methods of the product. It contains the product name, buying price, selling price, and total available products in the inventory. product class also contains some methods to access some attributes.  
 
 ### Product List class: It is an ArrayList and it contains the total number of products that are added, deleted, sold and bought.
 
