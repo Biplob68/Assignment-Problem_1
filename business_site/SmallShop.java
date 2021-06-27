@@ -7,7 +7,7 @@ public class SmallShop {
 	public void Shop() {
 		Scanner sc = new Scanner (System.in);
 		ProductList ArrayList = new ProductList();
-		int operations = 1000000;
+		int operations = 100000;
 		
 		for(int i = 1 ; i <= operations ; i++) {
 			System.out.println("Enter Operation Number: ");
@@ -16,7 +16,7 @@ public class SmallShop {
 			int name, buy_price, sell_price, count;
 					
 			if (number == 1) {
-				//Add product into ProductList
+				//Add a product into ProductList
 				System.out.println("Enter the product name(int): ");
 				name = sc.nextInt();
 				System.out.println("Enter Buy price: ");
@@ -24,11 +24,9 @@ public class SmallShop {
 				System.out.println("Enter Sell price: ");
 				sell_price = sc.nextInt();
 				System.out.println("Available number in the inventory to sell: ");
-			    count = sc.nextInt();
-				
-				
-				ArrayList.add(name, buy_price, sell_price, count);
-				
+			        count = sc.nextInt();
+		
+				ArrayList.add(name, buy_price, sell_price, count);		
 				System.out.println("The Product is added into the Product List!");
 			}
 			
@@ -53,10 +51,10 @@ public class SmallShop {
 			}
 			
 			else if(number == 4) {
-				// Sell Product
+				// Sell Product 
 				
 				System.out.println("Enter the product name that want to sell: ");
-			    name = sc.nextInt();
+			        name = sc.nextInt();
 				System.out.println("Enter the amount of product that want to sell: ");
 				int amount = sc.nextInt();
 				
@@ -72,11 +70,9 @@ public class SmallShop {
 			}
 			
 			else if(number == 6) {
-				/// check available balance
+				// check available balance
 				
-				//System.out.println("Total balance: " + availableBalance.balance);
 				System.out.println("Total balance: "+ProductList.balance);
-				
 			}
 			
 			else {
@@ -85,6 +81,4 @@ public class SmallShop {
 				
 		}
 	}
-	
-	
 }
