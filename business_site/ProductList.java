@@ -76,29 +76,25 @@ public class ProductList {
 		for(i = 0 ; i <products.size(); i++) {
 			Products p = products.get(i);
 			if(p.getproductName() == productName) { 
-				//profit from sell and buy
+				//profit from sell
 				int Profit = number * (p.getsellPrice() - p.getbuyPrice()); 
 				
-				p.sellProduct(number); // reduce product number
+				p.sellProduct(number); // reduce total product number
 				p.updateProfit(Profit); // Update Profit
 				
 				// adding the sell price
-				
-			    //availableBalance.balance += number* p.getsellPrice();
 				balance +=number*p.getsellPrice();
 				System.out.println("The Product is sold!");
 				
 				products.set(i, p); // update new product list
-				
 				return;
 			}
 		}
 	}
 	
 	
-	
+	// Method to print the entire product list
 	public void showList() {
-		/// Function to print the entire product list
 		int i, l = products.size();
 		for(i = 0 ; i <l ; ++i) {
 			Products product = products.get(i);
@@ -107,10 +103,8 @@ public class ProductList {
 			product.getsellPrice();
 			
 			System.out.println("Product number: " + (i + 1));
-			
 			product.displayproductInfo();
 			
-		
 			System.out.println(" ");
 		}
 		

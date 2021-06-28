@@ -6,7 +6,7 @@ public class Main {
 		
 		
 		SmallShop market = new SmallShop(); 
-		market.Shop(); 
+		market.Shop(); // start the execution of Shop class
 	}
 
 }
